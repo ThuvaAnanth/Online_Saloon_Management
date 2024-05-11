@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://localhost/IWT%20FINAL%20PROJECT/Home/homePage.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <title>Home</title>
+     <link rel="stylesheet" href="./Home_files/homePage.css">
+</head>
+<body onload="slider1()">   
+     <div class="body">
+          <div class="banner">
+               <div class="slider">
+                    <img src="./Home_files/img3.jpg" id="slideImg">
+               </div>
+          </div>
+          <div class="overLay">
+               <div>
+                    <div class="header">
+                         <h1><span class="firstWord">Habi </span><span class="lastWord">Bee</span></h1>
+                         <nav>
+                              <ul>
+                                   <li><a href="http://localhost/IWT%20FINAL%20PROJECT/Home/homePage.php">Home</a></li>
+                                   <li><a href="http://localhost/IWT%20FINAL%20PROJECT/Home/feedTime.php">Feed Time</a></li>
+                                   <li><a href="http://localhost/IWT%20FINAL%20PROJECT/Home/accountPage.php">Account</a></li> 
+                                    
+                                   <li><a href="http://localhost/IWT%20FINAL%20PROJECT/Home/about.php">About</a></li>
+                                    
+                              </ul>
+                         </nav>
+                    </div>
+               </div>
+               <div class="userInfo" id="userInfo">
+                              </div>
+               <div class="content">
+                    <h1>JUST THE <span class="look">LOOK</span> </h1>
+                         <h3>Just changing your hair style will change your whole look.<br>
+                              Looking good is the best revenge ever. Give a try with HabiBee ♥</h3>
+               </div>
+               <div class="buttons">
+                    <a href="http://localhost/IWT%20FINAL%20PROJECT/Home/bookAnAppoinment.php"><button id="bookButton">BOOK AN APPOINMENT</button></a>
+               </div>
+          </div>
+     </div>
+
+     <script>
+                    var slideImg = document.getElementById("slideImg");
+          var images1 = new Array(
+               "images/img1.jpg",
+               "images/img2.jpg",
+               "images/img3.jpg",
+               "images/img4.jpg",
+               "images/img5.jpg"
+          );
+
+          var len=images1.length;
+          var i=0;
+          function slider1(){
+               if(i>len-1){
+                    i=0
+               }
+               slideImg.src=images1[i];
+               i++;
+               setTimeout('slider1()',10000);
+          }
+     </script>
+
+</body></html>
